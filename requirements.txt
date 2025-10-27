@@ -1,0 +1,7 @@
+# Dependencias principales para DATAR
+google-adk>=1.17.0
+litellm>=1.79.0
+
+# Variables de entorno
+python-dotenv>=1.0.0
+
