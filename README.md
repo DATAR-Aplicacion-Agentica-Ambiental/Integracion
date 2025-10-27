@@ -1,2 +1,2 @@
 # Integracion
-Integración del prototipo de {DATAR} para la orquestación de gentes autónomas.
+Integración del prototipo de {DATAR} de Aplicación Agéntica Ambiental.
