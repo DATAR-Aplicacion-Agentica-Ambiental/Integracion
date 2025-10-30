@@ -1,6 +1,10 @@
 # Dependencias principales para DATAR
-google-adk>=1.17.0
+google-adk>=1.20.0  # Versión actualizada para resolver problemas con MCP
 litellm>=1.79.0
+pydantic>=2.5.0  # Versión compatible con google-adk y MCP
+
+# Dependencias MCP (Model Context Protocol)
+mcp  # Necesario para evitar errores con ClientSession
 
 # Variables de entorno
 python-dotenv>=1.0.0

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DATAR - Sistema Agéntico Ambiental</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1>🌱 DATAR</h1>
+                <p class="subtitle">Sistema Agéntico Ambiental - Estructura Ecológica Principal de Bogotá</p>
+            </div>
+            <div class="status-indicator">
+                <span id="connection-status" class="status-dot"></span>
+                <span id="connection-text">Conectando...</span>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="info-panel">
+                    <h3>ℹ️ Información del Agente</h3>
+                    <div id="agent-info" class="agent-info">
+                        <p>Cargando información...</p>
+                    </div>
+                </div>
+
+                <div class="sessions-panel">
+                    <h3>📋 Sesiones</h3>
+                    <button id="new-session-btn" class="btn btn-secondary">Nueva Sesión</button>
+                    <div id="sessions-list" class="sessions-list">
+                        <p class="text-muted">No hay sesiones activas</p>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Chat Area -->
+            <main class="chat-container">
+                <div class="chat-header">
+                    <h2>💬 Chat con DATAR</h2>
+                    <div class="session-info">
+                        <span id="current-session">Sin sesión activa</span>
+                    </div>
+                </div>
+
+                <div id="chat-messages" class="chat-messages">
+                    <div class="welcome-message">
+                        <h3>¡Bienvenido a DATAR!</h3>
+                        <p>Soy el sistema agéntico ambiental del laboratorio DATAR, diseñado para participar de la agencia de la Estructura Ecológica Principal (EEP) de Bogotá.</p>
+                        <p>Puedo ayudarte a coordinar observaciones sobre gestos que anuncian bosques en potencia en el ecosistema bogotano.</p>
+                        <p class="text-muted">Escribe un mensaje para comenzar...</p>
+                    </div>
+                </div>
+
+                <div class="chat-input-container">
+                    <textarea 
+                        id="message-input" 
+                        class="chat-input" 
+                        placeholder="Escribe tu mensaje aquí... (Shift + Enter para nueva línea)"
+                        rows="3"
+                    ></textarea>
+                    <button id="send-btn" class="btn btn-primary">
+                        <span id="send-btn-text">Enviar</span>
+                        <span id="send-btn-loader" class="loader hidden">⏳</span>
+                    </button>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
