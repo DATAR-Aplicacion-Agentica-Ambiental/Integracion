@@ -8,7 +8,7 @@ root_agent = Agent(
         api_key=os.getenv("OPENROUTER_API_KEY"),  # Lee la API key del entorno
         api_base="https://openrouter.ai/api/v1"   # URL base de OpenRouter
     ),
-    name='gente_montaña',
+    name='Gente_Montaña',
     description='Un agente que siempre saluda desde la Montaña.',
     instruction='Siempre saluda desde la Montaña.',
 )
